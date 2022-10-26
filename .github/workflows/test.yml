@@ -1,0 +1,9 @@
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: test
+        shell: pwsh
+        run: |
+          Resolve-DnsName 127.0.0.1
+
